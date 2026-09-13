@@ -15,7 +15,7 @@ The focus is not manual full-stack development. The focus is:
 - identifying a real user-experience problem
 - framing the customer and restaurant-owner workflows
 - writing a detailed product prompt
-- using Lovable to generate a clickable MVP demo
+- using AI-assisted prototyping to generate a clickable MVP demo
 - documenting the product logic, scope, and future direction
 
 ## Core Idea
@@ -62,17 +62,51 @@ The MVP uses a fictional café called **Saajh Café** — a warm, premium, moder
 - Basic customer data view
 - Basic analytics dashboard
 
+## Demo Routes
+
+- `/` — product landing page
+- `/demo` — demo selection page
+- `/r/saajh-cafe/table/7` — customer QR ordering demo
+- `/r/saajh-cafe/book` — direct table booking demo
+- `/dashboard` — restaurant dashboard overview
+- `/dashboard/orders` — live order board
+- `/dashboard/kitchen` — kitchen display
+- `/dashboard/menu` — menu management
+- `/dashboard/tables` — QR table management
+- `/dashboard/bookings` — direct booking management
+- `/dashboard/customers` — customer data view
+- `/dashboard/analytics` — basic analytics and ROI view
+- `/dashboard/branding` — branding preview
+
 ## Tech Stack
 
 - React
-- TypeScript
 - Vite
-- TanStack Router
-- Tailwind CSS
-- Recharts
-- qrcode.react
+- CSS
 - LocalStorage / mock data for demo state
-- Lovable for AI-assisted prototyping
+- AI-assisted prototyping workflow
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local Vite URL shown in the terminal.
+
+## Documentation
+
+The `docs/` folder includes:
+
+- problem statement
+- product thinking
+- prompt engineering process
+- customer flow
+- restaurant owner flow
+- MVP scope
+- Saajh Café demo profile
+- future scope
 
 ## Future Scope
 
